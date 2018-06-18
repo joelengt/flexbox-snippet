@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        :root {
+            --main-sample: white;
+        }
+
+        html {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+        }
+
+        .item {
+            color: var(--main-sample);
+            background-color: lightgrey;
+            width: 100%;
+            height: 50px;
+            border: 2px solid skyblue;
+            flex: 1;
+            align-self: center;
+        }
+        
+        .item .shelter {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0 10px;
+        }
+
+        .item .shelter p {
+            background-color: gray;
+            width: calc(100% - 20px);
+            margin-left: 10px;
+        }
+        
+        .item .shelter span {
+            background-color: gray;
+            width: 40px;
+            height: 40px;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='item'>
+           <div class='shelter'>
+                <span></span>
+                <p>block1</p>
+           </div>
+        </div>
+        <div class='item'>
+            <div class='shelter'>
+                <span></span>
+                <p>block2</p>
+            </div>
+        </div>
+        <div class='item'>
+            <div class='shelter'>
+                <span></span>
+                <p>block3</p>
+            </div>
+        </div>
+        <div class='item'>
+            <div class='shelter'>
+                <span></span>
+                <p>block4</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
